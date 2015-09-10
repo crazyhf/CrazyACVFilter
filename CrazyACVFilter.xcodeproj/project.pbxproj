@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2DAD4C31BA126DC00B500F1 /* CrazyACVFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D2DAD4C21BA126DC00B500F1 /* CrazyACVFilter.h */; };
+		D2DAD4C51BA126DC00B500F1 /* CrazyACVFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD4C41BA126DC00B500F1 /* CrazyACVFilter.m */; };
+		D2DAD4CB1BA126DC00B500F1 /* libCrazyACVFilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DAD4BF1BA126DC00B500F1 /* libCrazyACVFilter.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2DAD4CC1BA126DC00B500F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2DAD4B71BA126DC00B500F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2DAD4BE1BA126DC00B500F1;
+			remoteInfo = CrazyACVFilter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D2DAD4BD1BA126DC00B500F1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				D2DAD4C31BA126DC00B500F1 /* CrazyACVFilter.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D2DAD4BF1BA126DC00B500F1 /* libCrazyACVFilter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCrazyACVFilter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DAD4C21BA126DC00B500F1 /* CrazyACVFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrazyACVFilter.h; sourceTree = "<group>"; };
+		D2DAD4C41BA126DC00B500F1 /* CrazyACVFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrazyACVFilter.m; sourceTree = "<group>"; };
+		D2DAD4CA1BA126DC00B500F1 /* CrazyACVFilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrazyACVFilterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2DAD4D01BA126DC00B500F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2DAD51B1BA12DF300B500F1 /* CrazyACVFilter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrazyACVFilter-Prefix.pch"; sourceTree = "<group>"; };
+		D2DAD51C1BA12E1600B500F1 /* CrazyACVFilter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CrazyACVFilter-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2DAD4BC1BA126DC00B500F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2DAD4C71BA126DC00B500F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DAD4CB1BA126DC00B500F1 /* libCrazyACVFilter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2DAD4B61BA126DB00B500F1 = {
+			isa = PBXGroup;
+			children = (
+				D2DAD4C11BA126DC00B500F1 /* CrazyACVFilter */,
+				D2DAD5191BA12DB400B500F1 /* Frameworks */,
+				D2DAD4CE1BA126DC00B500F1 /* CrazyACVFilterTests */,
+				D2DAD4C01BA126DC00B500F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2DAD4C01BA126DC00B500F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2DAD4BF1BA126DC00B500F1 /* libCrazyACVFilter.a */,
+				D2DAD4CA1BA126DC00B500F1 /* CrazyACVFilterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2DAD4C11BA126DC00B500F1 /* CrazyACVFilter */ = {
+			isa = PBXGroup;
+			children = (
+				D2DAD4C21BA126DC00B500F1 /* CrazyACVFilter.h */,
+				D2DAD4C41BA126DC00B500F1 /* CrazyACVFilter.m */,
+				D2DAD51A1BA12DCB00B500F1 /* Supporting Files */,
+			);
+			path = CrazyACVFilter;
+			sourceTree = "<group>";
+		};
+		D2DAD4CE1BA126DC00B500F1 /* CrazyACVFilterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2DAD4CF1BA126DC00B500F1 /* Supporting Files */,
+			);
+			path = CrazyACVFilterTests;
+			sourceTree = "<group>";
+		};
+		D2DAD4CF1BA126DC00B500F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2DAD4D01BA126DC00B500F1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2DAD5191BA12DB400B500F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2DAD51A1BA12DCB00B500F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2DAD51B1BA12DF300B500F1 /* CrazyACVFilter-Prefix.pch */,
+				D2DAD51C1BA12E1600B500F1 /* CrazyACVFilter-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2DAD4BE1BA126DC00B500F1 /* CrazyACVFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2DAD4D31BA126DC00B500F1 /* Build configuration list for PBXNativeTarget "CrazyACVFilter" */;
+			buildPhases = (
+				D2DAD4BB1BA126DC00B500F1 /* Sources */,
+				D2DAD4BC1BA126DC00B500F1 /* Frameworks */,
+				D2DAD4BD1BA126DC00B500F1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrazyACVFilter;
+			productName = CrazyACVFilter;
+			productReference = D2DAD4BF1BA126DC00B500F1 /* libCrazyACVFilter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2DAD4C91BA126DC00B500F1 /* CrazyACVFilterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2DAD4D61BA126DC00B500F1 /* Build configuration list for PBXNativeTarget "CrazyACVFilterTests" */;
+			buildPhases = (
+				D2DAD4C61BA126DC00B500F1 /* Sources */,
+				D2DAD4C71BA126DC00B500F1 /* Frameworks */,
+				D2DAD4C81BA126DC00B500F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2DAD4CD1BA126DC00B500F1 /* PBXTargetDependency */,
+			);
+			name = CrazyACVFilterTests;
+			productName = CrazyACVFilterTests;
+			productReference = D2DAD4CA1BA126DC00B500F1 /* CrazyACVFilterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2DAD4B71BA126DC00B500F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = crazylhf;
+				TargetAttributes = {
+					D2DAD4BE1BA126DC00B500F1 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D2DAD4C91BA126DC00B500F1 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = D2DAD4BA1BA126DC00B500F1 /* Build configuration list for PBXProject "CrazyACVFilter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2DAD4B61BA126DB00B500F1;
+			productRefGroup = D2DAD4C01BA126DC00B500F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2DAD4BE1BA126DC00B500F1 /* CrazyACVFilter */,
+				D2DAD4C91BA126DC00B500F1 /* CrazyACVFilterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2DAD4C81BA126DC00B500F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2DAD4BB1BA126DC00B500F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2DAD4C51BA126DC00B500F1 /* CrazyACVFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2DAD4C61BA126DC00B500F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2DAD4CD1BA126DC00B500F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2DAD4BE1BA126DC00B500F1 /* CrazyACVFilter */;
+			targetProxy = D2DAD4CC1BA126DC00B500F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D2DAD4D11BA126DC00B500F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrazyACVFilter/CrazyACVFilter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CrazyACVFilter/CrazyACVFilter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2DAD4D21BA126DC00B500F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CrazyACVFilter/CrazyACVFilter-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "CrazyACVFilter/CrazyACVFilter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2DAD4D41BA126DC00B500F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D2DAD4D51BA126DC00B500F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D2DAD4D71BA126DC00B500F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrazyACVFilterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D2DAD4D81BA126DC00B500F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrazyACVFilterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2DAD4BA1BA126DC00B500F1 /* Build configuration list for PBXProject "CrazyACVFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2DAD4D11BA126DC00B500F1 /* Debug */,
+				D2DAD4D21BA126DC00B500F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2DAD4D31BA126DC00B500F1 /* Build configuration list for PBXNativeTarget "CrazyACVFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2DAD4D41BA126DC00B500F1 /* Debug */,
+				D2DAD4D51BA126DC00B500F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2DAD4D61BA126DC00B500F1 /* Build configuration list for PBXNativeTarget "CrazyACVFilterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2DAD4D71BA126DC00B500F1 /* Debug */,
+				D2DAD4D81BA126DC00B500F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2DAD4B71BA126DC00B500F1 /* Project object */;
+}
