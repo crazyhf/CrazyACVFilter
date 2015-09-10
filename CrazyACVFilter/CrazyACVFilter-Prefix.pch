@@ -9,7 +9,30 @@
 #ifndef CrazyACVFilter_CrazyACVFilter_Prefix_pch
 #define CrazyACVFilter_CrazyACVFilter_Prefix_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+    #import "CrazyLogUtil.h"
+    #import "CrazyOptionMgr.h"
+#endif
+
+//===============================================================
+#pragma mark - assert
+
+#if DEBUG
+    #define SVGLAssertW(exp, ...) NSAssert(exp, __VA_ARGS__)
+    #define SVGLAssertE(exp, ...) NSAssert(exp, __VA_ARGS__)
+#else
+    #define SVGLAssertW(exp, ...) \
+            do {\
+                if (!(exp)) CrazyLogw(__VA_ARGS__);\
+            } while(0)
+
+    #define SVGLAssertE(exp, ...) \
+            do {\
+                if(!(exp)) CrazyLoge(__VA_ARGS__);\
+            } while(0)
+#endif
 
 #endif

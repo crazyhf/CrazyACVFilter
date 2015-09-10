@@ -10,6 +10,13 @@
 		D2DAD4C31BA126DC00B500F1 /* CrazyACVFilter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D2DAD4C21BA126DC00B500F1 /* CrazyACVFilter.h */; };
 		D2DAD4C51BA126DC00B500F1 /* CrazyACVFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD4C41BA126DC00B500F1 /* CrazyACVFilter.m */; };
 		D2DAD4CB1BA126DC00B500F1 /* libCrazyACVFilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DAD4BF1BA126DC00B500F1 /* libCrazyACVFilter.a */; };
+		D2DAD51F1BA1313A00B500F1 /* CrazyCubicSpline.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD51E1BA1313A00B500F1 /* CrazyCubicSpline.m */; };
+		D2DAD5221BA1550900B500F1 /* CrazyACVFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD5211BA1550900B500F1 /* CrazyACVFileHandle.m */; };
+		D2DAD5261BA155FE00B500F1 /* CrazyFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD5251BA155FE00B500F1 /* CrazyFileUtil.m */; };
+		D2DAD5291BA1599000B500F1 /* CrazyShaderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD5281BA1599000B500F1 /* CrazyShaderHelper.m */; };
+		D2DAD52C1BA15A3B00B500F1 /* CrazyLUTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD52B1BA15A3B00B500F1 /* CrazyLUTHelper.m */; };
+		D2DAD52F1BA15B0E00B500F1 /* CrazyOptionMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD52E1BA15B0E00B500F1 /* CrazyOptionMgr.m */; };
+		D2DAD5321BA1600F00B500F1 /* CrazyLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD5311BA1600F00B500F1 /* CrazyLogUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,20 @@
 		D2DAD4D01BA126DC00B500F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2DAD51B1BA12DF300B500F1 /* CrazyACVFilter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrazyACVFilter-Prefix.pch"; sourceTree = "<group>"; };
 		D2DAD51C1BA12E1600B500F1 /* CrazyACVFilter-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CrazyACVFilter-Info.plist"; sourceTree = "<group>"; };
+		D2DAD51D1BA1313A00B500F1 /* CrazyCubicSpline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyCubicSpline.h; sourceTree = "<group>"; };
+		D2DAD51E1BA1313A00B500F1 /* CrazyCubicSpline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyCubicSpline.m; sourceTree = "<group>"; };
+		D2DAD5201BA1550900B500F1 /* CrazyACVFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyACVFileHandle.h; sourceTree = "<group>"; };
+		D2DAD5211BA1550900B500F1 /* CrazyACVFileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyACVFileHandle.m; sourceTree = "<group>"; };
+		D2DAD5241BA155FE00B500F1 /* CrazyFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyFileUtil.h; sourceTree = "<group>"; };
+		D2DAD5251BA155FE00B500F1 /* CrazyFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyFileUtil.m; sourceTree = "<group>"; };
+		D2DAD5271BA1599000B500F1 /* CrazyShaderHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyShaderHelper.h; sourceTree = "<group>"; };
+		D2DAD5281BA1599000B500F1 /* CrazyShaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyShaderHelper.m; sourceTree = "<group>"; };
+		D2DAD52A1BA15A3B00B500F1 /* CrazyLUTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyLUTHelper.h; sourceTree = "<group>"; };
+		D2DAD52B1BA15A3B00B500F1 /* CrazyLUTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyLUTHelper.m; sourceTree = "<group>"; };
+		D2DAD52D1BA15B0E00B500F1 /* CrazyOptionMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyOptionMgr.h; sourceTree = "<group>"; };
+		D2DAD52E1BA15B0E00B500F1 /* CrazyOptionMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyOptionMgr.m; sourceTree = "<group>"; };
+		D2DAD5301BA1600F00B500F1 /* CrazyLogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyLogUtil.h; sourceTree = "<group>"; };
+		D2DAD5311BA1600F00B500F1 /* CrazyLogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyLogUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				D2DAD4C11BA126DC00B500F1 /* CrazyACVFilter */,
+				D2DAD5231BA155A000B500F1 /* Utils */,
 				D2DAD5191BA12DB400B500F1 /* Frameworks */,
 				D2DAD4CE1BA126DC00B500F1 /* CrazyACVFilterTests */,
 				D2DAD4C01BA126DC00B500F1 /* Products */,
@@ -86,8 +108,16 @@
 		D2DAD4C11BA126DC00B500F1 /* CrazyACVFilter */ = {
 			isa = PBXGroup;
 			children = (
+				D2DAD52D1BA15B0E00B500F1 /* CrazyOptionMgr.h */,
+				D2DAD52E1BA15B0E00B500F1 /* CrazyOptionMgr.m */,
 				D2DAD4C21BA126DC00B500F1 /* CrazyACVFilter.h */,
 				D2DAD4C41BA126DC00B500F1 /* CrazyACVFilter.m */,
+				D2DAD52A1BA15A3B00B500F1 /* CrazyLUTHelper.h */,
+				D2DAD52B1BA15A3B00B500F1 /* CrazyLUTHelper.m */,
+				D2DAD51D1BA1313A00B500F1 /* CrazyCubicSpline.h */,
+				D2DAD51E1BA1313A00B500F1 /* CrazyCubicSpline.m */,
+				D2DAD5201BA1550900B500F1 /* CrazyACVFileHandle.h */,
+				D2DAD5211BA1550900B500F1 /* CrazyACVFileHandle.m */,
 				D2DAD51A1BA12DCB00B500F1 /* Supporting Files */,
 			);
 			path = CrazyACVFilter;
@@ -123,6 +153,20 @@
 				D2DAD51C1BA12E1600B500F1 /* CrazyACVFilter-Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2DAD5231BA155A000B500F1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D2DAD5241BA155FE00B500F1 /* CrazyFileUtil.h */,
+				D2DAD5251BA155FE00B500F1 /* CrazyFileUtil.m */,
+				D2DAD5301BA1600F00B500F1 /* CrazyLogUtil.h */,
+				D2DAD5311BA1600F00B500F1 /* CrazyLogUtil.m */,
+				D2DAD5271BA1599000B500F1 /* CrazyShaderHelper.h */,
+				D2DAD5281BA1599000B500F1 /* CrazyShaderHelper.m */,
+			);
+			name = Utils;
+			path = CrazyACVFilter/Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +213,7 @@
 		D2DAD4B71BA126DC00B500F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Crazy;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = crazylhf;
 				TargetAttributes = {
@@ -213,7 +258,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2DAD5221BA1550900B500F1 /* CrazyACVFileHandle.m in Sources */,
+				D2DAD52C1BA15A3B00B500F1 /* CrazyLUTHelper.m in Sources */,
+				D2DAD5321BA1600F00B500F1 /* CrazyLogUtil.m in Sources */,
+				D2DAD5261BA155FE00B500F1 /* CrazyFileUtil.m in Sources */,
 				D2DAD4C51BA126DC00B500F1 /* CrazyACVFilter.m in Sources */,
+				D2DAD51F1BA1313A00B500F1 /* CrazyCubicSpline.m in Sources */,
+				D2DAD5291BA1599000B500F1 /* CrazyShaderHelper.m in Sources */,
+				D2DAD52F1BA15B0E00B500F1 /* CrazyOptionMgr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
