@@ -18,20 +18,38 @@
 #endif
 
 //===============================================================
+#pragma mark - log macro
+
+#if DEBUG
+#define CrazyInnerLogd(...) CrazyLogd(CrazyACVFilterTag, __VA_ARGS__)
+
+#define CrazyInnerLogv(...) CrazyLogv(CrazyACVFilterTag, __VA_ARGS__)
+#else
+#define CrazyInnerLogd(...)
+#define CrazyInnerLogv(...)
+#endif
+
+#define CrazyInnerLogi(...) CrazyLogi(CrazyACVFilterTag, __VA_ARGS__)
+
+#define CrazyInnerLogw(...) CrazyLogw(CrazyACVFilterTag, __VA_ARGS__)
+
+#define CrazyInnerLoge(...) CrazyLoge(CrazyACVFilterTag, __VA_ARGS__)
+
+//===============================================================
 #pragma mark - assert
 
 #if DEBUG
-    #define SVGLAssertW(exp, ...) NSAssert(exp, __VA_ARGS__)
-    #define SVGLAssertE(exp, ...) NSAssert(exp, __VA_ARGS__)
+    #define CrazyAssertW(exp, ...) NSAssert(exp, __VA_ARGS__)
+    #define CrazyAssertE(exp, ...) NSAssert(exp, __VA_ARGS__)
 #else
-    #define SVGLAssertW(exp, ...) \
+    #define CrazyAssertW(exp, ...) \
             do {\
-                if (!(exp)) CrazyLogw(__VA_ARGS__);\
+                if (!(exp)) CrazyInnerLogw(__VA_ARGS__);\
             } while(0)
 
-    #define SVGLAssertE(exp, ...) \
+    #define CrazyAssertE(exp, ...) \
             do {\
-                if(!(exp)) CrazyLoge(__VA_ARGS__);\
+                if(!(exp)) CrazyInnerLoge(__VA_ARGS__);\
             } while(0)
 #endif
 

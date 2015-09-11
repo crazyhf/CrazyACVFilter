@@ -12,40 +12,40 @@
 #pragma mark - log macro
 
 #if DEBUG
-#define CrazyLogd(...) \
-            [CrazyLogUtil debug:CrazyACVFilterTag \
+#define CrazyLogd(tag, ...) \
+            [CrazyLogUtil debug:tag \
                        selector:[NSString stringWithUTF8String:__FUNCTION__] \
                      lineNumber:@(__LINE__) format:__VA_ARGS__]
 
-#define CrazyLogv(...) \
-            [CrazyLogUtil verbose:CrazyACVFilterTag \
+#define CrazyLogv(tag, ...) \
+            [CrazyLogUtil verbose:tag \
                          selector:[NSString stringWithUTF8String:__FUNCTION__] \
                        lineNumber:@(__LINE__) format:__VA_ARGS__]
 #else
-#define CrazyLogd(...)
-#define CrazyLogv(...)
+#define CrazyLogd(tag, ...)
+#define CrazyLogv(tag, ...)
 #endif
 
-#define CrazyLogi(...) \
-            [CrazyLogUtil information:CrazyACVFilterTag \
+#define CrazyLogi(tag, ...) \
+            [CrazyLogUtil information:tag \
                              selector:[NSString stringWithUTF8String:__FUNCTION__] \
                            lineNumber:@(__LINE__) format:__VA_ARGS__]
 
-#define CrazyLogw(...) \
-            [CrazyLogUtil warning:CrazyACVFilterTag \
+#define CrazyLogw(tag, ...) \
+            [CrazyLogUtil warning:tag \
                          selector:[NSString stringWithUTF8String:__FUNCTION__] \
                        lineNumber:@(__LINE__) format:__VA_ARGS__]
 
-#define CrazyLoge(...) \
-            [CrazyLogUtil error:CrazyACVFilterTag \
+#define CrazyLoge(tag, ...) \
+            [CrazyLogUtil error:tag \
                        selector:[NSString stringWithUTF8String:__FUNCTION__] \
                      lineNumber:@(__LINE__) format:__VA_ARGS__]
 
 
-//===============================================================
-
 #define CrazyACVFilterTag   @"CrazyACVFilter"
 
+
+//===============================================================
 
 typedef NS_ENUM(NSUInteger, CrazyLogLevel) {
     CrazyLog_Information,
@@ -54,6 +54,20 @@ typedef NS_ENUM(NSUInteger, CrazyLogLevel) {
     CrazyLog_Warning,
     CrazyLog_Error,
 };
+
+@interface CrazyLogContent : NSObject
+
+@property (nonatomic, strong) NSString * logTag;
+
+@property (nonatomic, assign) CrazyLogLevel level;
+
+@property (nonatomic, strong) NSString * selector;
+
+@property (nonatomic, strong) NSNumber * lineNumber;
+
+@property (nonatomic, strong) NSString * realContent;
+
+@end
 
 
 @interface CrazyLogUtil : NSObject

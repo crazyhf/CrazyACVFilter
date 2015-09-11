@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^crazy_log_block_t)(CrazyLogLevel level, NSString * tag, NSString * logContent);
+typedef void (^crazy_log_block_t)(CrazyLogContent * logContent);
 
 
 @interface CrazyOptionMgr : NSObject

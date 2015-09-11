@@ -17,6 +17,12 @@
 		D2DAD52C1BA15A3B00B500F1 /* CrazyLUTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD52B1BA15A3B00B500F1 /* CrazyLUTHelper.m */; };
 		D2DAD52F1BA15B0E00B500F1 /* CrazyOptionMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD52E1BA15B0E00B500F1 /* CrazyOptionMgr.m */; };
 		D2DAD5321BA1600F00B500F1 /* CrazyLogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DAD5311BA1600F00B500F1 /* CrazyLogUtil.m */; };
+		D2E03F321BA28C960036929C /* CrazyFilterRenderBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E03F311BA28C960036929C /* CrazyFilterRenderBase.m */; };
+		D2E03F351BA28CD20036929C /* CrazyFilterRenderMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E03F341BA28CD20036929C /* CrazyFilterRenderMgr.m */; };
+		D2E03F381BA28E150036929C /* CrazyACVRender.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E03F371BA28E150036929C /* CrazyACVRender.m */; };
+		D2E03F3B1BA28E7A0036929C /* CrazyPixelBufferHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E03F3A1BA28E7A0036929C /* CrazyPixelBufferHelper.m */; };
+		D2E03F3E1BA28EC90036929C /* UIImage+Representation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E03F3D1BA28EC90036929C /* UIImage+Representation.m */; };
+		D2E03F411BA290580036929C /* CrazyACVRenderWrap.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E03F401BA290580036929C /* CrazyACVRenderWrap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,18 @@
 		D2DAD52E1BA15B0E00B500F1 /* CrazyOptionMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyOptionMgr.m; sourceTree = "<group>"; };
 		D2DAD5301BA1600F00B500F1 /* CrazyLogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyLogUtil.h; sourceTree = "<group>"; };
 		D2DAD5311BA1600F00B500F1 /* CrazyLogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyLogUtil.m; sourceTree = "<group>"; };
+		D2E03F301BA28C960036929C /* CrazyFilterRenderBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyFilterRenderBase.h; sourceTree = "<group>"; };
+		D2E03F311BA28C960036929C /* CrazyFilterRenderBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyFilterRenderBase.m; sourceTree = "<group>"; };
+		D2E03F331BA28CD20036929C /* CrazyFilterRenderMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyFilterRenderMgr.h; sourceTree = "<group>"; };
+		D2E03F341BA28CD20036929C /* CrazyFilterRenderMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyFilterRenderMgr.m; sourceTree = "<group>"; };
+		D2E03F361BA28E150036929C /* CrazyACVRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyACVRender.h; sourceTree = "<group>"; };
+		D2E03F371BA28E150036929C /* CrazyACVRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyACVRender.m; sourceTree = "<group>"; };
+		D2E03F391BA28E7A0036929C /* CrazyPixelBufferHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyPixelBufferHelper.h; sourceTree = "<group>"; };
+		D2E03F3A1BA28E7A0036929C /* CrazyPixelBufferHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyPixelBufferHelper.m; sourceTree = "<group>"; };
+		D2E03F3C1BA28EC90036929C /* UIImage+Representation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Representation.h"; sourceTree = "<group>"; };
+		D2E03F3D1BA28EC90036929C /* UIImage+Representation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Representation.m"; sourceTree = "<group>"; };
+		D2E03F3F1BA290580036929C /* CrazyACVRenderWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrazyACVRenderWrap.h; sourceTree = "<group>"; };
+		D2E03F401BA290580036929C /* CrazyACVRenderWrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrazyACVRenderWrap.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +128,8 @@
 			children = (
 				D2DAD52D1BA15B0E00B500F1 /* CrazyOptionMgr.h */,
 				D2DAD52E1BA15B0E00B500F1 /* CrazyOptionMgr.m */,
+				D2E03F361BA28E150036929C /* CrazyACVRender.h */,
+				D2E03F371BA28E150036929C /* CrazyACVRender.m */,
 				D2DAD4C21BA126DC00B500F1 /* CrazyACVFilter.h */,
 				D2DAD4C41BA126DC00B500F1 /* CrazyACVFilter.m */,
 				D2DAD52A1BA15A3B00B500F1 /* CrazyLUTHelper.h */,
@@ -118,6 +138,12 @@
 				D2DAD51E1BA1313A00B500F1 /* CrazyCubicSpline.m */,
 				D2DAD5201BA1550900B500F1 /* CrazyACVFileHandle.h */,
 				D2DAD5211BA1550900B500F1 /* CrazyACVFileHandle.m */,
+				D2E03F331BA28CD20036929C /* CrazyFilterRenderMgr.h */,
+				D2E03F341BA28CD20036929C /* CrazyFilterRenderMgr.m */,
+				D2E03F3F1BA290580036929C /* CrazyACVRenderWrap.h */,
+				D2E03F401BA290580036929C /* CrazyACVRenderWrap.m */,
+				D2E03F301BA28C960036929C /* CrazyFilterRenderBase.h */,
+				D2E03F311BA28C960036929C /* CrazyFilterRenderBase.m */,
 				D2DAD51A1BA12DCB00B500F1 /* Supporting Files */,
 			);
 			path = CrazyACVFilter;
@@ -164,6 +190,10 @@
 				D2DAD5311BA1600F00B500F1 /* CrazyLogUtil.m */,
 				D2DAD5271BA1599000B500F1 /* CrazyShaderHelper.h */,
 				D2DAD5281BA1599000B500F1 /* CrazyShaderHelper.m */,
+				D2E03F391BA28E7A0036929C /* CrazyPixelBufferHelper.h */,
+				D2E03F3A1BA28E7A0036929C /* CrazyPixelBufferHelper.m */,
+				D2E03F3C1BA28EC90036929C /* UIImage+Representation.h */,
+				D2E03F3D1BA28EC90036929C /* UIImage+Representation.m */,
 			);
 			name = Utils;
 			path = CrazyACVFilter/Utils;
@@ -258,12 +288,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2E03F3E1BA28EC90036929C /* UIImage+Representation.m in Sources */,
 				D2DAD5221BA1550900B500F1 /* CrazyACVFileHandle.m in Sources */,
 				D2DAD52C1BA15A3B00B500F1 /* CrazyLUTHelper.m in Sources */,
 				D2DAD5321BA1600F00B500F1 /* CrazyLogUtil.m in Sources */,
 				D2DAD5261BA155FE00B500F1 /* CrazyFileUtil.m in Sources */,
+				D2E03F3B1BA28E7A0036929C /* CrazyPixelBufferHelper.m in Sources */,
+				D2E03F411BA290580036929C /* CrazyACVRenderWrap.m in Sources */,
 				D2DAD4C51BA126DC00B500F1 /* CrazyACVFilter.m in Sources */,
 				D2DAD51F1BA1313A00B500F1 /* CrazyCubicSpline.m in Sources */,
+				D2E03F351BA28CD20036929C /* CrazyFilterRenderMgr.m in Sources */,
+				D2E03F381BA28E150036929C /* CrazyACVRender.m in Sources */,
+				D2E03F321BA28C960036929C /* CrazyFilterRenderBase.m in Sources */,
 				D2DAD5291BA1599000B500F1 /* CrazyShaderHelper.m in Sources */,
 				D2DAD52F1BA15B0E00B500F1 /* CrazyOptionMgr.m in Sources */,
 			);

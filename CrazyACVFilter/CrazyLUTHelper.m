@@ -48,7 +48,7 @@
             });
         }
         else {
-            CrazyLogw(@"generateACVLUT failed, spline points count[red:%@, green:%@, blue:%@, rgb:%@]", @(acvFileHandler.redSplinePoints.count), @(acvFileHandler.greenSplinePoints.count), @(acvFileHandler.blueSplinePoints.count), @(acvFileHandler.rgbSplinePoints.count));
+            CrazyInnerLogw(@"generateACVLUT failed, spline points count[red:%@, green:%@, blue:%@, rgb:%@]", @(acvFileHandler.redSplinePoints.count), @(acvFileHandler.greenSplinePoints.count), @(acvFileHandler.blueSplinePoints.count), @(acvFileHandler.rgbSplinePoints.count));
         }
     });
 }
@@ -63,7 +63,7 @@
     EAGLContext * aGLContext = [EAGLContext currentContext];
     if (glContext != aGLContext) {
         if (NO == [EAGLContext setCurrentContext:glContext]) {
-            CrazyLoge(@"setCurrentContext failed!");
+            CrazyInnerLoge(@"setCurrentContext failed!");
             return aGLTextureHandler;
         }
     }

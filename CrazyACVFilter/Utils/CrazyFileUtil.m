@@ -50,7 +50,7 @@
     if (YES == result && nil == error) {
         return YES;
     } else {
-        CrazyLogw(@"create directory[%@] failed", directory);
+        CrazyInnerLogw(@"create directory[%@] failed", directory);
         return NO;
     }
 }
@@ -58,12 +58,12 @@
 + (BOOL)createFile:(NSString *)filePath overwrite:(BOOL)overwrite
 {
     if ([filePath hasSuffix:@"/"]) {
-        CrazyLogw(@"create file[%@] failed, may be it is a directory", filePath);
+        CrazyInnerLogw(@"create file[%@] failed, may be it is a directory", filePath);
         return NO;
     }
     
     if (NO == overwrite && YES == [self isFileExisted:filePath]) {
-        CrazyLogi(@"create file[%@] with overwrite[%@] successfully", filePath, @(overwrite));
+        CrazyInnerLogi(@"create file[%@] with overwrite[%@] successfully", filePath, @(overwrite));
         return YES;
     }
     
@@ -75,10 +75,10 @@
     
     NSFileManager * fileMgr = [NSFileManager defaultManager];
     if (YES == [fileMgr createFileAtPath:filePath contents:nil attributes:nil]) {
-        CrazyLogi(@"create file[%@] with overwrite[%@] successfully", filePath, @(overwrite));
+        CrazyInnerLogi(@"create file[%@] with overwrite[%@] successfully", filePath, @(overwrite));
         return YES;
     } else {
-        CrazyLogw(@"create file[%@] with overwrite[%@] failed", filePath, @(overwrite));
+        CrazyInnerLogw(@"create file[%@] with overwrite[%@] failed", filePath, @(overwrite));
         return NO;
     }
 }
@@ -92,7 +92,7 @@
     if (YES == result && nil == error) {
         return YES;
     } else {
-        CrazyLogw(@"remove file/directory[%@] failed", itemPath);
+        CrazyInnerLogw(@"remove file/directory[%@] failed", itemPath);
         return NO;
     }
 }
@@ -107,7 +107,7 @@
     if (YES == result && nil == error) {
         return YES;
     } else {
-        CrazyLogw(@"copy file/directory[%@] to path[%@] failed", srcItemPath, destItemPath);
+        CrazyInnerLogw(@"copy file/directory[%@] to path[%@] failed", srcItemPath, destItemPath);
         return NO;
     }
 }
@@ -122,7 +122,7 @@
     if (YES == result && nil == error) {
         return YES;
     } else {
-        CrazyLogw(@"move file/directory[%@] to path[%@] failed", srcItemPath, destItemPath);
+        CrazyInnerLogw(@"move file/directory[%@] to path[%@] failed", srcItemPath, destItemPath);
         return NO;
     }
 }
@@ -133,7 +133,7 @@
                callbackBlock:(void(^)(NSString * filePath))callbackBlock
 {
     if (NO == [self isDirectoryExisted:directory]) {
-        CrazyLoge(@"enumFilesInDirectory failed, the directory[%@] isn't existed", directory);
+        CrazyInnerLoge(@"enumFilesInDirectory failed, the directory[%@] isn't existed", directory);
         return;
     }
     

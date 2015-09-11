@@ -97,7 +97,7 @@
     _redSplinePoints = [CrazyCubicSpline cubicSpline:self.redSplinePoints upperBound:255 lowerBound:0];
     _rgbSplinePoints = [CrazyCubicSpline cubicSpline:self.rgbSplinePoints upperBound:255 lowerBound:0];
     
-    //CrazyLogd(@"cubic spline interpolation success, redSplinePoints : %@ \ngreenSplinePoints : %@ \nblueSplinePoints : %@ \nrgbSplinePoints : %@", self.redSplinePoints, self.greenSplinePoints, self.blueSplinePoints, self.rgbSplinePoints);
+    //CrazyInnerLogd(@"cubic spline interpolation success, redSplinePoints : %@ \ngreenSplinePoints : %@ \nblueSplinePoints : %@ \nrgbSplinePoints : %@", self.redSplinePoints, self.greenSplinePoints, self.blueSplinePoints, self.rgbSplinePoints);
 }
 
 
@@ -127,7 +127,7 @@
         return [self initWithACVData:anACVData];
     }
     
-    CrazyLoge(@"the acv file[%@] is not existed", acvFilePath);
+    CrazyInnerLoge(@"the acv file[%@] is not existed", acvFilePath);
     return nil;
 }
 
@@ -146,14 +146,14 @@
         return self;
     }
     
-    CrazyLoge(@"the acv data length is 0, acv data : %@", acvFileData);
+    CrazyInnerLoge(@"the acv data length is 0, acv data : %@", acvFileData);
     return nil;
 }
 
 - (id)init
 {
     if (self = [super init]) {
-        SVGLAssertW(NO, @"SVACVFileHandle init is not support");
+        CrazyAssertW(NO, @"SVACVFileHandle init is not support");
     }
     return self;
 }

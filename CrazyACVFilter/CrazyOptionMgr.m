@@ -15,7 +15,6 @@
 - (id)init
 {
     if (self = [super init]) {
-        [self crazyLogBlockInit];
         [self acvLUTFileDirectoryInit];
     }
     return self;
@@ -33,14 +32,9 @@
         }
     } else {
         if (nil != self.crazyLogBlock) {
-            CrazyLogw(@"get document directory failed");
+            CrazyInnerLogw(@"get document directory failed");
         }
     }
-}
-
-- (void)crazyLogBlockInit
-{
-    ;
 }
 
 

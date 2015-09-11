@@ -9,7 +9,21 @@
 #ifndef CrazyACVFilterDemo_CrazyACVFilterDemo_Prefix_pch
 #define CrazyACVFilterDemo_CrazyACVFilterDemo_Prefix_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+#endif
+
+//===============================================================
+#pragma mark - log macro
+
+#define CrazyBizLogd(...) CrazyLogd(@(__FILE__).lastPathComponent, __VA_ARGS__)
+
+#define CrazyBizLogv(...) CrazyLogv(@(__FILE__).lastPathComponent, __VA_ARGS__)
+
+#define CrazyBizLogi(...) CrazyLogi(@(__FILE__).lastPathComponent, __VA_ARGS__)
+
+#define CrazyBizLogw(...) CrazyLogw(@(__FILE__).lastPathComponent, __VA_ARGS__)
+
+#define CrazyBizLoge(...) CrazyLoge(@(__FILE__).lastPathComponent, __VA_ARGS__)
 
 #endif
